@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fathi.shakhes.NewsActivity"
+    tools:showIn="@layout/activity_news">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/newsoverall_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/news_dorm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dorm"
+                android:minHeight="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nothing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="هیچ موردی وجود ندارد"
+                        android:textColor="#ffffff"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/dorm_inner_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/dorm_inner_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="6dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_1_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_1_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000000"
+                                android:textSize="13sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/dorm">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_1_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_1_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dorm_inner_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_2_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_2_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/dorm">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_2_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_2_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dorm_inner_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_3_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dorm_inner_3_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/dorm">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_3_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dorm_inner_3_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo1" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/dormnews_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:layout_toStartOf="@+id/imageView2"
+                    android:text="اداره امور خوابگاه‌ها"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/more1"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_refah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/welfare"
+                android:minHeight="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/nothing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="هیچ موردی وجود ندارد"
+                        android:textColor="#ffffff"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/refah_inner_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/refah_inner_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="6dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_1_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_1_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/welfare">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_1_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_1_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/refah_inner_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_2_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_2_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/welfare">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_2_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_2_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/refah_inner_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_3_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/refah_inner_3_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/welfare">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_3_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/refah_inner_3_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo3" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/welfarenews_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="64dp"
+                    android:text="اداره رفاه دانشجویان"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/more2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/food"
+                android:minHeight="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/nothing3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="هیچ موردی وجود ندارد"
+                        android:textColor="#ffffff"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/dining_inner_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/dining_inner_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="6dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_1_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_1_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/food">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_1_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_1_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dining_inner_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_2_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_2_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/food">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_2_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_2_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dining_inner_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_3_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/dining_inner_3_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/food">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_3_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/dining_inner_3_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo2" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/foodnews_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="64dp"
+                    android:text="اداره امور تغذیه"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/more3"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_behdasht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/health"
+                android:minHeight="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/nothing4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="هیچ موردی وجود ندارد"
+                        android:textColor="#ffffff"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/behdasht_inner_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/behdasht_inner_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="6dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_1_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_1_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/health">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_1_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_1_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/behdasht_inner_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_2_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_2_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/health">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_2_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_2_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/behdasht_inner_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_3_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/behdasht_inner_3_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/health">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_3_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/behdasht_inner_3_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo4" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/healthnews_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="64dp"
+                    android:text="مرکز بهداشت و درمان"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/more4"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/news_modir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/sharebook"
+                android:minHeight="145dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/nothing5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="هیچ موردی وجود ندارد"
+                        android:textColor="#ffffff"
+                        android:textSize="21sp" />
+
+                    <LinearLayout
+                        android:id="@+id/modir_inner_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/modir_inner_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_margin="6dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_1_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_1_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sharebook">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_1_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_1_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/modir_inner_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_2_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_2_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sharebook">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_2_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_2_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/modir_inner_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_3_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="17sp" />
+
+                            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                android:id="@+id/modir_inner_3_abs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:padding="2dp"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/sharebook">
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_3_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+
+                                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                                    android:id="@+id/modir_inner_3_cont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ادامه"
+                                    android:textColor="#fff"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo5" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/othernews_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="64dp"
+                    android:text="سایر خدمات"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/more5"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/iron"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_alpha="1"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1">
+
+                <ImageButton
+                    android:id="@+id/bt4Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="food"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_4" />
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_alpha="1"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1">
+
+                <ImageButton
+                    android:id="@+id/bt2Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="news"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_2" />
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_alpha="1"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1">
+
+                <ImageButton
+                    android:id="@+id/bt1Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="dorm"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_1" />
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1"
+                app:rv_alpha="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/bt3Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="welfare"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_3" />
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1"
+                app:rv_alpha="1">
+
+                <ImageButton
+                    android:id="@+id/bt5Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="ShareBook"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_5" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="0.98"
+                android:scaleY="0.98"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                app:rv_zoom="true"
+                app:rv_zoomDuration="120"
+                app:rv_zoomScale="1.1"
+                app:rv_alpha="1">
+
+                <ImageButton
+                    android:id="@+id/bt6Click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:onClick="health"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/bt_6" />
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

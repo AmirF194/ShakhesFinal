@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/iron"
+    tools:context="fathi.shakhes.SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView2"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:text="شاخص"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        tools:text="شاخص" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:text="شبکه اطلاع رسانی و خدمات دانشجویی دانشگاه صنعتی شریف"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:text="شبکه اطلاع رسانی و خدمات دانشجویی دانشگاه صنعتی شریف" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:text="کلیه حقوق این نرم افزار متعلق به مدیریت امور دانشجویی دانشگاه صنعتی شریف می باشد."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:text="کلیه حقوق این نرم افزار متعلق به مدیریت امور دانشجویی دانشگاه صنعتی شریف می باشد." />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:text="Developed By Amir Fathi"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        tools:text="Developed By Amir Fathi" />
+
+</LinearLayout>

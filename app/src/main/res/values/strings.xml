@@ -1,0 +1,359 @@
+<resources>
+    <string name="app_name">Shakhes</string>
+
+
+
+
+    <string name="show_all">Show All</string>
+    <string name="horsetooth_mountain_title">Horsetooth Mountain Park</string>
+    <string name="mountain_whitewater_title">Mountain Whitewater Descents</string>
+    <string name="flower_trial_garden_title">Annual Flower Trial Garden</string>
+    <string name="horsetooth_reservoir_title">Horsetooth Reservoir</string>
+    <string name="city_park_title">City Park</string>
+    <string name="melting_pot_title">The Melting Pot</string>
+    <string name="maza_kabob_title">Maza Kabob</string>
+    <string name="rio_grande_title">Rio Grande</string>
+    <string name="star_of_india_title">Star of India</string>
+    <string name="lucile_title">Lucile\'s</string>
+    <string name="cafe_athens_title">Cafe Athens</string>
+    <string name="cafe_de_bangkok_title">Cafe de Bangkok</string>
+    <string name="new_belgium_title">New Belgium Brewing Company</string>
+    <string name="odell_brewing_title">Odell Brewing Company</string>
+    <string name="anheuser_busch_title">Anheuser Busch Brewery</string>
+    <string name="coopersmith_title">Coopersmith Pub and Brewing</string>
+    <string name="social_title">Social</string>
+    <string name="mayor_old_town_title">Mayor of Old Town</string>
+    <string name="colorado_room_title">The Colorado Room</string>
+    <string name="ace_gilletts_title">Ace Gilletts</string>
+    <string name="elliots_martini_title">Elliot\'s Martini bar</string>
+
+    <string name="top_activities">Top Activities</string>
+    <string name="scenic_open_space">Scenic Open Space</string>
+    <string name="white_water_rafting">White-water rafting</string>
+    <string name="horticulture_display">Vibrant Horticulture display</string>
+    <string name="top_restaurants">Top Restaurants</string>
+    <string name="amazing_fondue">Amazing Fondue place</string>
+    <string name="afghan_specialty">Afghan Specialties</string>
+    <string name="indian_buffet">Best Indian Buffet</string>
+    <string name="breakfast_place">Fantastic Breakfast Place</string>
+    <string name="greek_mediterranean">Good Old Greek-Mediterranean</string>
+    <string name="traditional_thai">Traditional Thai</string>
+    <string name="best_outdoors">All-in-one Outdoors</string>
+    <string name="ideal_relaxing_spot">Ideal Relaxing Spot</string>
+    <string name="top_breweries">Top Breweries</string>
+    <string name="new_belgium_free_tours">Great Free Tours</string>
+    <string name="odell_microbrew">Decent Draft Microbrews</string>
+    <string name="grand_tour">Magnificent Brewing House</string>
+    <string name="top_bars_nightlife">Top Bars/Nightlife</string>
+    <string name="amazing_margarita">Amazing Margaritas</string>
+    <string name="creative_cocktails">Creative Cocktails</string>
+    <string name="mayor_great_selction">Great Selection of Beers</string>
+    <string name="colorado_beers_and_spirits">Good Craft Beers and Local Spirits</string>
+    <string name="gilletts_crafted_beers">Superbly Crafted Cocktails</string>
+    <string name="coopersmith_mixed_desc">Interesting Choice of Beers and Great Location</string>
+    <string name="elliot_martini_variety">Large Selection of Martinis and Seasonal Cocktails</string>
+    <string name="sample_detailed_description">Detailed description of the attraction</string>
+    <string name="show_map">show in map</string>
+
+    <string name="city_park_detailed_desc">
+        City Park Pool is located in City Park.
+        Enjoy the park surroundings and Sheldon Lake for fishing and an outdoor pool.
+        City Park Pool is the best place to be during those hot summer days in Fort Collins.
+        City Park Pool provides you with a water park experience right in your own backyard.
+        Admission is charged for everyone entering City Park Pool.
+    </string>
+
+    <string name="horsetooth_reservoir_detailed_desc">
+        Six and one-half miles of water beckon visitors to come out and play! Surrounded by
+        1,900 acres of public lands, this reservoir has it all: fishing, boating, camping,
+        picnicking, swimming, scuba diving, rock climbing, and water skiing.
+    </string>
+
+    <string name="flower_trail_garden_detailed_desc">
+        The Annual Flower Trial Garden is a horticultural project at the Colorado State University
+        in Fort Collins. Every year, the project sees new varietals of different flowers planted in
+        the garden to assess their ability to develop and grow in the local climate, as well as
+        their flowering characteristics. Open to public and free of charge.
+    </string>
+
+    <string name="horsetooth_mountain_park_detailed_desc">
+        The scenic 2,711-acre Horsetooth Mountain Open Space (consisting of Culver, Soderberg,
+        and Hughey Open Spaces) covers elevations from 5,430 to 7,255 feet. Its 29 miles of hiking,
+        biking, and horseback riding trails connect to the Blue Sky Trail and Lory State Park trails.
+        The outstanding Horsetooth Rock is a familiar local landmark visible from the plains.
+    </string>
+
+    <string name="mountain_whitewater_descents_detailed_desc">
+        Mountain Whitewater Descents is a guide company offering whitewater rafting trips on
+        Cache La Poudre River, equipment rentals and a pub. It prides itself on its special permit
+        for using the river, which is the only "Wild and Scenic" river near Fort Collins and
+        Estes Park, offering the best wilderness rafting experience.
+    </string>
+
+    <string name="the_melting_pot_detailed_desc">
+        The only place in Fort Collins serving some amazing fondues, with the choice of heated pots
+        of cheese, chocolate or broth for dipping and cooking. For the adventurous, local favorites
+        also occupy a sizable portion of the menu. Waiters are friendly and helpful and they help
+        you decide the food befitting your palate. Make reservations ahead of time.
+    </string>
+
+    <string name="maza_kabob_detailed_desc">
+        Enjoy many delightful authentic Afghan recipes with savory flavors and mouth watering smells
+        brought straight from the heart of Afghanistan. Locally owned and operated. Serving
+        Fort Collins for more than 5 years!
+    </string>
+
+    <string name="rio_grande_detailed_desc">
+        The "Start of it All" - Fort Collins is the original Rio. Located in the heart of Old Town,
+        The Rio has become a popular destination for locals, students, and tourists to enjoy
+        fresh Tex Mex and legendary margaritas.
+    </string>
+
+    <string name="star_of_india_detailed_desc">
+        North Indian craft kitchen featuring local and international ingredients cooked fresh to
+        order keeping you in mind! Dine in/take out. The owners of this fine establishment believe
+        that spicy does not translate to "being hot". This is a go-to place for all indian food
+        cravers and others who like to occasionally get a refreshing taste of indian flavors.
+    </string>
+
+    <string name="lucile_creole_detailed_desc">
+        Amazing beignets, fantastic chicory coffee and other bayou-rific Cajun-Creole staples
+        mark this area chain, where the rich and flavorful breakfast fare and awesome brunch
+        are what fans expect when they go to heaven; the cozy, homey digs
+        capture New Orleans, but get there early on weekends or prepare to bump elbows.
+    </string>
+
+    <string name="cafe_athens_detailed_desc">
+        Delicious hot food, super fast service, awesome prices. Consistently on point every visit.
+        Chicken, falafel, and souvlaki gyros are incredibly good for the price. Local favorite is
+        the fries - double fried, nice and crispy, and perfectly salted. So good! Service is also
+        pleasantly friendly for a busy greek restaurant.
+    </string>
+
+    <string name="cafe_de_bangkok_detailed_desc">
+        Truly authentic Thai place in Ft Collins. If you are looking for fresh, authentic and
+        traditional Thai food, this place is as good as you will find. Unbelievable flavor and
+        spice that you won\'t find at most Thai or Asian cuisine restaurants. Chicken Cashew is a
+        must try. You either will feel something entirely new or it may transport you back home.
+    </string>
+
+    <string name="new_belgium_detailed_desc">
+        Free tour, getting to see behind the bottles of your favorite beer? Priceless. The tour
+        is fun!! Completely different brewery tour experience. Its a little more than a hour tour
+        with loads of new information about the process of beer brewing and get to learn all this in
+        a fun way.
+    </string>
+
+    <string name="odell_brewing_detailed_desc">
+        Odell breweries, is a gorgeous taproom just outside downtown Ft. Collins. There\'s ample
+        space to sip and socialize both inside and out, as well as a great little section of
+        souvenirs so tourists can bring back a memento of their visit. Bar service is friendly and
+        efficient, and the there\'s a food counter along with a stage for local entertainment.
+    </string>
+
+    <string name="anheuser_busch_detailed_desc">
+        The brewery tour is an immersive experience where you can hear, smell, touch and taste the
+        components that go into some of the world’s most popular beers. Additionally, Fort Collins
+        is the home to the world-famous Budweiser Clydesdales West Coast Team. You can get an
+        up-close and personal encounter and have your picture taken with these iconic horses!
+    </string>
+
+    <string name="coopersmith_detailed_desc">
+        Welcome to World-Famous CooperSmith\’s Pub and Brewing. Tucked into the heart of
+        Old Town Fort Collins, CooperSmith\’s offers a distinct alternative in eating and drinking
+        establishments. We invite you to enjoy our unique charm. Located across the walkway from
+        CooperSmith\’s Pubside, Poolside offers not only additional brewery space but an upscale
+        yet casual atmosphere.
+    </string>
+
+    <string name="social_detailed_desc">
+        Social is a locally-owned, underground, cocktail bar in Old Town Fort Collins. It\'s a
+        place to enjoy properly crafted cocktails, sommelier selected wines, and abundantly sliced
+        charcuterie. At the entrance into Old Town Square, a street clock and a well-lit stairwell
+        welcome you to an evening filled with great conversation. Friendly service and great
+        quality food and beverage.
+    </string>
+
+    <string name="mayor_of_old_town_detailed_desc">
+        Named one of the nation\'s top 100 beer bars, the Mayor of Old Town has 100 beers on tap
+        and a passionate staff that\'ll help you find your ideal brew. Good food menu at a
+        reasonable price, they really have a lot to choose from. This beer oasis is very close to
+        Colorado State University campus and is in downtown Fort Collins area.
+    </string>
+
+    <string name="the_colorado_room_detailed_desc">
+        Best place for Sliders and Poutine and Beer. It is right down the street from CSU, a
+        nice patio out front and lot of Colorado memorabilia inside creates a funky place to
+        hang out and get some good food and beer. Service is fantastic and friendly all around.
+    </string>
+
+    <string name="ace_gilletts_detailed_desc">
+        Step away from one world and descend underground
+        into another – a shadowy, smoldering enclave with walls nearly a century old that hold the
+        memories and merriment of travelers and the surrounding neighborhood alike. Sip a
+        handcrafted martini from our signature drink menu, or partake in that perfect pairing of
+        wine and unforgettable fare.
+    </string>
+
+    <string name="elliot_martini_bar_detailed_desc">
+        Cooking up inventive concoctions you could only dream of comes naturally to the talented
+        bartenders at this marvelous Fort Collins martini bar that\'s both chic (huge windows
+        and secluded booths) and chill (films projected on the wall); tabs are reasonable for what
+        you\'re getting and the atmosphere\'s perfect for either a group outing or a date, keeping
+        it a must-stop for many.
+    </string>
+    <string name="attraction_card_image_view_content_desc">ImageView displaying the attraction\'s image file</string>
+    <string name="list_item_image_view_content_desc">Image of Attraction</string>
+    <string name="list_item_right_arrow_image_content_desc">Right arrow image to move forward to the next activity</string>
+    <string name="detail_image_cd">Image of Attraction</string>
+
+    <!-- Map query strings -->
+    <string name="mq_ace_gilletts">geo:0,0?q=Ace+Gillett\'s+Lounge+Fort+Collins</string>
+    <string name="mq_anheuser_busch">geo:0,0?q=Anheuser+Busch+Fort+Collins</string>
+    <string name="mq_cafe_athens">geo:0,0?q=Cafe+Athens+Fort+Collins</string>
+    <string name="mq_cafe_de_bangkok">geo:0,0?q=Café+de+Bangkok+Fort+Collins</string>
+    <string name="mq_city_park">geo:0,0?q=City+Park+Fort+Collins</string>
+    <string name="mq_the_colorado_room">geo:0,0?q=Colorado+Room+Fort+Collins</string>
+    <string name="mq_coopersmith">geo:0,0?q=Coopersmith\'s+Pub+&amp;+Brewing+Fort+Collins)</string>
+    <string name="mq_elliot_martini_bar">geo:0,0?q=Elliot\'s+Martini+Bar+Fort+Collins</string>
+    <string name="mq_annual_flower_trial_garden">geo:0,0?q=Annual+Flower+Trial+Garden+Fort+Collins</string>
+    <string name="mq_horestooth_mountain_park">geo:0,0?q=Horsetooth+Mountain+Park+Fort+Collins</string>
+    <string name="mq_horestooth_reservoir">geo:0,0?q=Horsetooth+Reservoir+Fort+Collins</string>
+    <string name="mq_lucile">geo:0,0?q=Lucile\'s+Fort+Collins</string>
+    <string name="mq_mayor_old_town">geo:0,0?q=The+Mayor+of+Old+Town+Fort+Collins</string>
+    <string name="mq_maza_kabob">geo:0,0?q=Maza+Kabob+Fort+Collins</string>
+    <string name="mq_the_melting_pot">geo:0,0?q=The+Melting+Pot+Fort+Collins</string>
+    <string name="mq_mountain_whitewater">geo:0,0?q=Mountain+Whitewater+Descents+Fort+Collins</string>
+    <string name="mq_new_belgium">geo:0,0?q=New+Belgium+Brewing+Company+Fort+Collins</string>
+    <string name="mq_odell_brewing">geo:0,0?q=Odell+Brewing+Company+Fort+Collins</string>
+    <string name="mq_rio_grande">geo:0,0?q=Rio+Grande+Restaurant+Fort+Collins</string>
+    <string name="mq_social">geo:0,0?q=Social+Fort+Collins</string>
+    <string name="mq_star_of_india">geo:0,0?q=Star+of+India+Fort+Collins</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    این صفحه در دست ساخت است\n به سایت زیر مراجعه کنید:\nhttps://dining.sharif.ir/
+    <string name="under_const_refah">این صفحه در دست ساخت است\n به سایت زیر مراجعه کنید:\nhttps://sws.sharif.ir/</string>
+    <string name="under_const_food">این صفحه در دست ساخت است\n به سایت زیر مراجعه کنید:\nhttps://dining.sharif.ir/</string>
+    <string name="under_const_behdasht">این صفحه در دست ساخت است.\n به سایت زیر مراجعه کنید:\nhttps://med.sharif.ir/</string>
+    <string name="under_const_sharebook">این امکان بزودی اضافه خواهد شد.</string>
+    <string name="under_const_dorm">این صفحه در دست ساخت است\n به سایت زیر مراجعه کنید:\nhttps://dorm.sharif.ir/</string>
+    <string name="title_activity_details">DetailsActivity</string>
+      <string name="action_settings">Settings</string>
+    <string name="FoodTableTab1">رزروها</string>
+    <string name="FoodTableTab2">برنامه هفتگی</string>
+    <string name="FoodTableTab3">برنامه هفته آینده</string>
+
+
+    <string name="Spinner_title">برنامه هفته آینده</string>
+    <string name="FoodMessageTab1">پیام های خوانده شده</string>
+    <string name="FoodMessageTab2">پیام های خوانده نشده</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="btn_restore">بازیابی کلمه عبور</string>
+    <string name="btn_register">ثبت نام</string>
+    <string name="hint_et_email">نام کاربری</string>
+    <string name="hint_et_pass">کلمه عبور</string>
+    <string name="hint_et_pass_repet">تکرار کلمه عبور</string>
+    <string name="checkbox_remember">مرا به خاطر بسپار</string>
+    <string name="btn_login">ورود</string>
+    <string name="tv_restore"> <u>کلمه عبور را فراموش کرده ام</u> </string>
+    <string name="tv_register">حساب کاربری ندارید؟<u>ایجاد کنید</u> </string>
+    <string name="hint_et_name">نام</string>
+    <string name="label_register_activity">ثبت نام</string>
+    <string name="label_restore_activity">بازیابی کلمه عبور</string>
+    <string name="login_fail">وارد ناموفق بود</string>
+    <string name="email_login_success">وارد شدید</string>
+    <string name="register_success">ثبت نام انجام شد</string>
+    <string name="register_fail">ثبت نام ناموفق بود</string>
+    <string name="error_email">نام کاربری نادرست است</string>
+    <string name="essential_filed">پر کردن این فیلد الزامی است</string>
+    <string name="minimum_length">حداقل تعداد کارکتر باید 8 باشد</string>
+    <string name="fit_length"> تعداد کارکترها باید 8 باشد</string>
+    <string name="phone_example">مانند نمونه پر شود.</string>
+    <string name="wrong_mail">آدرس پست الکترونیکی به درستی وارد نشده است.</string>
+    <string name="error_pass">رمز را وارد کنید</string>
+    <string name="restore_email_sent">کلمه عبور به ایمیل فرستاده شد</string>
+    <string name="restore_email_fail">بازیابی کمله عبور موفقیت آمیز نبود</string>
+    <string name="checkbox">قوانین را می پذیرم</string>
+
+    <string name="name">نام*</string>
+    <string name="last_name">نام خانوادگی*</string>
+    <string name="user_name">نام کاربری*</string>
+    <string name="shabaa_identifier">شناسه بانکی شبا</string>
+    <string name="bank_account_number">شماره حساب بانکی تجارت</string>
+    <string name="student_identifier">شماره دانشجویی</string>
+    <string name="mail">ایمیل*</string>
+    <string name="password">گذرواژه*</string>
+    <string name="repeat_password">تکرار گذرواژه*</string>
+    <string name="stu_number">شماره دانشجویی</string>
+    <string name="phone_number">شماره تلفن همراه*(مثال:09123456789)</string>
+    <string name="national_identifier">شماره ملی*(مثال:0955780772)</string>
+
+    <string name="hello">Hello World, main!</string>
+    <string name="rulesplain"> <u>متن قوانین</u></string>
+    <string name="code_repet"> <u>رمز مجدد</u></string>
+    <string name="rules"
+        formatted="true"
+        translatable="true"
+        > <b>فروشنده :</b>
+•	در این قسمت فروشنده  ، برای فروش کتاب اطلاعات مندرج در اپیلیکیشن را پر می کند ، مدت سه روز وقت دارد کتاب را به مخزن تحویل دهد ، اگر اطلاعات مندرج با اطلاعات کتاب هم خوانی داشت پس از تایید مخزن ، در اپیلیکیشن نمایش داده خواهد شد .
+•	طی سه روز کاری کتاب را به مخزن تحویل دهد.
+
+
+<b>خریدار :</b>
+از آنجایی که مشخصات وارد شده توسط فروشنده در اپ و مشخصات ظاهری کتاب توسط مخزن مورد تطابق قرار می گیرد ، فروشنده با پرداخت آنلاین می تواند کتاب را خریداری کند ، شایان ذکر است خریدار می تواند بطور فیزیکی کتاب را در مخزن مشاهده کند سپس پرداخت آنلاین را انجام دهد.
+ <b>بخش مالی :</b>
+تمامی پرداخت ها بصورت آنلاین انجام خواهند شد
+<b>بخش کتاب :</b>
+<b>تبادل کتاب به سه صورت پیشنهاد می شود :</b>
+سه مدل پیشنهادی : مدل دریافت وجه ، مدل دریافت اعتبار ، مدل صفر ریال (بدون دریافت وجه).
+<b>قوانین پیشنهادی</b>
+•	ShareBook هیچگونه تعهدی نسبت به فروش کتاب ها نخواهد داشت.
+•	مخزن فیزیکی کتاب ها در داخل دانشگاه خواهد بود .
+•	امکان تعدیل قیمت و تغییرمدل بصورت آنلاین و هر لحظه فراهم باشد.
+•	امکان عودت کتاب به مدت یک ماه فراهم نخواهد بود.
+•	شایان ذکر است مبنای محاسبات هزینه اعلامی کتاب توسط فروشنده خواهد بود نه قیمت روی جلد.
+•	بعد از گذشت سه ماه ، فرصت ده روزه برای عودت کتاب به فروشنده داده خواهد شد عدم حضور فروشنده برای دریافت کتاب ، به منزله اهدا کتاب به مخزن می باشد.
+<b>مدل دریافت وجه :</b>
+پرداخت هزینه به فروشنده کتاب طبق روند زیر است :
+•	فروش کتاب در ماه اول : 80 درصد هزینه اعلامی کتاب - هزینه واریز به حساب ( کارت به کارت یا از طریق بانک و ...)
+•	فروش کتاب در ماه دوم : 70 درصد هزینه اعلامی کتاب - هزینه واریز به حساب ( کارت به کارت یا از طریق بانک و ...)
+•	فروش کتاب در ماه سوم : 60 درصد هزینه اعلامی کتاب - هزینه واریز به حساب ( کارت به کارت یا از طریق بانک و ...)
+<b>مدل دریافت اعتبار</b>
+در این مدل یک تومان ، معادل یک امتیاز در نظر گرفته می شود.
+•	تبادل کتاب در ماه اول : اختصاص 80 درصد هزینه اعلامی کتاب بصورت امتیاز
+•	تبادل کتاب در ماه دوم : اختصاص 70 درصد هزینه اعلامی کتاب بصورت امتیاز
+•	تبادل کتاب در ماه سوم :اختصاص 60 درصد هزینه اعلامی کتاب بصورت امتیاز
+
+<b>مدل اهدا :</b>
+در این مدل فروشنده قیمت فروش را صفر اعلام می کند.
+</string>
+    <string name="tab1">بخش مالی</string>
+    <string name="tab2">حساب کاربری</string>
+    <string name="tab3">لیست کتاب ها</string>
+
+
+
+
+
+    <string-array name="spinner_mehman_1">
+        <item>پدر</item>
+        <item>برادر</item>
+        <item>سایر</item>
+    </string-array>
+</resources>

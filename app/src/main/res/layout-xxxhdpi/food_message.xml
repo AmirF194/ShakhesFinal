@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <TextView
+        android:id="@+id/nomessagetext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:gravity="center"
+        android:text="پیامی وجود ندارد."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+    <ListView
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:divider="@color/food"
+        android:dividerHeight="4px"
+        android:visibility="gone"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_weight="100"
+        android:background="@color/invisible"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!--  Email Label -->
+        <TextView
+            android:id="@+id/login_title_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="سامانه تغذیه"
+            android:textAlignment="center"
+            android:textColor="@color/food"
+            android:textSize="25dp"
+            tools:text="سامانه تغذیه" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/Txt_User_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:hint="شماره دانشجویی"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="false"
+                android:shadowColor="@color/white"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/Txt_Pass_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="گذرواژه"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/food_login_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/food"
+            android:onClick="FoodLoginCheckBox"
+            android:text="مرا به خاطر بسپار"
+            android:textColor="@color/white" />
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_dining"
+            android:paddingBottom="10dp"
+            app:rv_color="@color/food"
+            app:rv_rippleDuration="200"
+            app:rv_ripplePadding="0dp"
+            app:rv_type="rectangle"
+            app:rv_zoomDuration="200">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/invisible"
+                android:gravity="center"
+                android:text="ورود"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp" />
+
+        </com.andexert.library.RippleView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="300"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/dining_login" />
+
+
+</LinearLayout>

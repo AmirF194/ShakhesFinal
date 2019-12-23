@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_tasisat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#91ade7"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="درب"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر دستگیره یا قفل"
+                   android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="روغن کاری لولا"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر شکستگی"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعویض یا نصب درزگیر"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر توری درب بالکن"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edit_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="پنجره"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر یا نصب توری"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="روغن کاری لولا"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_b3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر حفاظ"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعویض یا نصب درزگیر"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_b5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعویض شیشه شکسته"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_b6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="نصب یا ترمیم پرده"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="تخت"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر تخته ام دی اف"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_c2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="رفع شل شدن پیچ ها"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_c3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر حفاظ"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="اجاق گاز"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_d1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="رفع گرفتگی شعله"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_d2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر ترموکوپل گاز"
+                    android:buttonTint="@color/dorm"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_d3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر فندک گاز"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="سیستم آب و فاضلاب"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="رفع گرفتگی کف شور"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_e2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="رفع گرفتگی سینک"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_e3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر دوش آب"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_e4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر سیفون"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_e5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="رفع گرفتگی چاه توالت"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_e6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر شیرآلات"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="الکتریکی"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر کلید و پریز برق"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_f2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعویض لامپ"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_f3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="برق کاری"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_f4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر هواکش"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="سیستم‌های سرمایشی و گرمایشی"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_g1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر دریچه کانال کولر"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_g2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر کولر آبی"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_g3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر شوفاژ"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="سایر"
+                    android:textColor="#0011ff" />
+
+                <CheckBox
+                    android:id="@+id/chbox_h1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر حفاظ/نرده بالکن"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر کابینت"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر میز"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر قفسه کتابخانه"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر قفل/دستگیره کمد"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر رخت آویز"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر یا نصب آینه"
+                    android:buttonTint="@color/dorm"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر صندلی"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="لکه گیری و نقاشی"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="دریل کاری"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="تعمیر یخچال"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chbox_h12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="ترمیم دیوار"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <CheckBox
+                    android:id="@+id/other_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckboxClicked"
+                    android:text="غیره"
+                    android:buttonTint="@color/dorm"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/dorm"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:lines="10"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="شرح مشکل/درخواست"
+                    android:textColor="#0011ff" />
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#efefef"
+                    android:backgroundTint="@color/dorm"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:scrollHorizontally="false"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textDirection="rtl"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#c1c1c1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="نام و نام خانوادگی (نماینده دوم)"
+                    android:textColor="#0011ff" />
+
+                <Spinner
+                    android:id="@+id/namayande"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/n_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="شماره تلفن نماینده دوم"
+                        android:inputType="phone"
+                        android:textColorHint="@color/white"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:onClick="submit"
+                android:text="ثبت"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

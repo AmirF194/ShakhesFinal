@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/refresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fathi.shakhes.DormListActivity"
+    tools:showIn="@layout/activity_dorm_list2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:id="@+id/dorm_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/inner_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_1_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_1_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_1_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:textAlignment="gravity"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_2_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_2_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_3_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_3_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_3_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_4_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_4_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_4_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_5_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_5_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_5_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_6_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_6_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_6_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_7_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_7_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_7_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_8_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_8_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_8_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_9_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_9_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_9_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d9d9d9"
+                android:orientation="vertical">
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_10_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <com.uncopt.android.widget.text.justify.JustifiedTextView
+                    android:id="@+id/inner_10_abs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dorm">
+
+                    <com.uncopt.android.widget.text.justify.JustifiedTextView
+                        android:id="@+id/inner_10_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.uncopt.android.widget.text.justify.JustifiedTextView
+        android:id="@+id/nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="هیچ موردی یافت نشد"
+        android:textColor="#e2e2e2"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

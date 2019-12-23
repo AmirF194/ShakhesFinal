@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/padding_sides">
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_title_sharebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="باشگاه اشتراک کتاب"
+            android:textAlignment="center"
+            android:textColor="@color/sharebook"
+            android:textSize="25dp"
+            tools:text="باشگاه اشتراک کتاب" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            >
+
+            <EditText
+                android:id="@+id/username_login_sharebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_et_email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/text_small"
+                android:shadowColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            >
+
+            <EditText
+                android:id="@+id/password_login_sharebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_et_pass"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_small"
+                android:shadowColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkboxlogin_sharebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:onClick="LoginCheckBox"
+            android:text="@string/checkbox_remember"
+            android:textColor="@color/white"
+            android:buttonTint="@color/sharebook"
+            />
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_sharebook"
+            android:paddingBottom="10dp"
+            app:rv_color="@color/sharebook"
+            app:rv_rippleDuration="200"
+            app:rv_ripplePadding="0dp"
+            app:rv_type="rectangle"
+            app:rv_zoomDuration="200">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login_sharebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/invisible"
+                android:gravity="center"
+                android:text="ورود"
+                android:shadowColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textCursorDrawable="@color/white"
+                android:textSize="20dp" />
+
+        </com.andexert.library.RippleView>
+
+
+        <TextView
+            android:id="@+id/Restorepass_sharebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/tv_restore"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Register_sharebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:text="@string/tv_register"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

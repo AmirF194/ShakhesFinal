@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_sides"
+            android:layout_marginRight="@dimen/padding_sides"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="قوانین و مقررات"
+                android:textColor="@color/color_rulesplain"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rule1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خرید و فروش در Sharebook فقط  در صورتی امکان پذیر است که شما ثبت نام کرده باشید."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اپیلیکیشن ShareBook هیچگونه تعهدی نسبت به فروش کتاب ها نخواهد داشت. "
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+
+            <TextView
+                android:id="@+id/textVie11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="مخزن کتاب"
+                android:textColor="@color/color_rulesplain"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مخزن فیزیکی کتاب ها در مرکز خدمات رفاهی دانشگاه می باشد."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عودت کتاب به مدت یک ماه از تاریخ نمایش کتاب در اپیلیکیشن امکان پذیر نمی باشد."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مبنای محاسبات هزینه اعلامی کتاب توسط فروشنده می باشد( نه قیمت روی جلد)."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تعدیل قیمت و تغییر مدل بصورت آنلاین امکان پذیر است."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بعد از گذشت سه ماه از تاریخ نمایش کتاب در اپیلیکیشن، فرصت ده روزه برای عودت کتاب به فروشنده داده خواهد شد.عدم حضور فروشنده برای دریافت کتاب، به منزله اهدا کتاب به مخزن می باشد."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="فروشنده"
+                android:textColor="@color/color_rulesplain"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                tools:text="فروشنده"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="فروشنده سه روز از تاریخ ثبت اطلاعات در اپیلیکیشن فرصت دارد کتاب را به مخزن تحویل دهد."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خریدار"
+                android:textColor="@color/color_rulesplain"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="با توجه به این که مشخصات وارد شده توسط فروشنده در اپیلیکیشن و مشخصات ظاهری کتاب توسط مخزن مورد تطابق قرار می گیرد، فروشنده با پرداخت آنلاین می تواند کتاب را خریداری کند.در عین حال خریدار می تواند بطور فیزیکی کتاب را در مخزن مشاهده کندوسپس پرداخت آنلاین را انجام دهد."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بخش مالی"
+                android:textColor="@color/color_rulesplain"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تمامی پرداخت ها بصورت آنلاین انجام خواهد شد.تبادل کتاب به سه صورت امکان دارد: مدل دریافت وجه ، مدل دریافت اعتبار ، مدل صفر ریال (بدون دریافت وجه-اهدا)."
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مدل دریافت وجه"
+                android:textColor="@color/color_rulesplain"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="فروش کتاب در ماه اول : اختصاص 80 درصد هزینه اعلامی کتاب منهای هزینه تراکنش"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                ></TextView>
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="منهای هزینه تراکنشفروش کتاب در ماه دوم : اختصاص 70 درصد هزینه اعلامی کتاب منهای منهای هزینه تراکنش"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="فروش کتاب در ماه سوم : اختصاص 60 درصد هزینه اعلامی کتاب منهای هزینه تراکنش"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مدل دریافت اعتبار"
+                android:textColor="@color/color_rulesplain"
+                android:textStyle="bold"
+                tools:text="مدل دریافت اعتبار"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:text="تبادل کتاب در ماه اول : اختصاص 90 درصد هزینه اعلامی کتاب بصورت اعتبار ریالی"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:text="تبادل کتاب در ماه دوم : اختصاص 80 درصد هزینه اعلامی کتاب بصورت اعتبار ریالی"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:text="تبادل کتاب در ماه سوم : اختصاص 70 درصد هزینه اعلامی کتاب بصورت اعتبار ریالی"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مدل صفر ریال(بدون دریافت وجه)"
+                android:textColor="@color/color_rulesplain"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|right"
+                />
+
+            <TextView
+                android:id="@+id/rule16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_sides_small"
+                android:text="در این مدل فروشنده قیمت فروش را صفر اعلام می کند و کتاب را اهد می کند."
+                android:layout_gravity="center_vertical|right"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_contact_us"
+    android:background="@color/food_diluted"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="200">
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره موبایل"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="200">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="100"
+        android:gravity="top">
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:hint="متن پیام"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:scrollHorizontally="false"
+            android:textAlignment="viewStart"
+            android:textDirection="rtl"
+            android:textSize="30sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="160dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:background="@color/food"
+        android:gravity="center"
+        android:onClick="submit"
+        android:text="ثبت"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_person"
+            android:title="نمایه" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_book"
+            android:title="کتاب ها" />
+        <item
+            android:id="@+id/nav_gallery1"
+            android:icon="@drawable/connect_us"
+            android:title="سفارش ها" />
+
+        <item
+            android:id="@+id/nav_gallery10"
+            android:icon="@drawable/ic_account_balance_wallet_black"
+            android:title="کیف پول" />
+
+        <item
+            android:id="@+id/nav_gallery114"
+            android:icon="@drawable/ic_attach_money"
+            android:title="تراکنش های بانکی" />
+
+        <item android:title="عمومی"
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_tien_ich"
+                        android:icon="@drawable/ic_share"
+                        android:title="معرفی به دوستان" />
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_info"
+                        android:title="درباره ما" />
+                    <item
+                        android:id="@+id/nav_logoutt"
+                        android:icon="@drawable/ic_exit"
+                        android:title="خروج" />
+
+                </group>
+            </menu>
+
+        </item>
+
+    </group>
+</menu>

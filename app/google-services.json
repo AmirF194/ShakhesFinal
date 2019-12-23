@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "494248741287",
+    "firebase_url": "https://shakhesfinal.firebaseio.com",
+    "project_id": "shakhesfinal",
+    "storage_bucket": "shakhesfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494248741287:android:232b0b5bac56b9ad",
+        "android_client_info": {
+          "package_name": "fathi.shakhes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494248741287-gh5n95kba6ijm7m6hlldrvat9h0t0ca6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fathi.shakhes",
+            "certificate_hash": "1f386bfe330afa766a5940f91edccb9d542fa3ca"
+          }
+        },
+        {
+          "client_id": "494248741287-0jms01tth8jtbrgb9idrhhgp95qa67k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqCpo56YIDT1i14ZgACG6MuqOyNbR0ycw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494248741287-0jms01tth8jtbrgb9idrhhgp95qa67k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

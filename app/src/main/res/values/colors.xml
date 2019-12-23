@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorPrimary">#000794</color>
+    <color name="colorPrimaryDark">#000b60</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="splash">#222222</color>
+    <color name="invisible">#00000000</color>
+    <color name="red">#710000</color>
+    <color name="food_diluted">#afc6c9</color>
+    <color name="transparent_white">#00FFFFFF</color>
+
+    <color name="news">#f04e4e</color>
+    <color name="dorm">#7a91fe</color>
+    <color name="welfare">#54da68</color>
+    <color name="food">#34abb8</color>
+    <color name="health">#cb82ed</color>
+    <color name="sharebook">#ffc133</color>
+
+    <color name="White">#ffffff</color>
+
+    <color name="edittext_floating">#254916</color>
+    <color name="color_rules">#ffffff</color>
+    <color name="color_rulesplain">#940000</color>
+    <color name="color_rules_title">#1100ff</color>
+    <color name="time_finished">#ff0011</color>
+    <color name="backauto">#afafaf</color>
+    <color name="transparnet">#00000000</color>
+
+    <color name="detailed_attraction_view_background">#B0BEC5</color>
+    <color name="top_activities_text_color">#00B0FF</color>
+    <color name="top_restaurants_text_color">#FF3D00</color>
+    <color name="top_breweries_text_color">#3D5AFE</color>
+    <color name="top_bars_nightlife_text_color">#FF9100</color>
+
+
+</resources>
